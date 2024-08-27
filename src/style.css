@@ -1,1 +1,37 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+}
+
+.card {
+  background-color: white;
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 500px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card-center {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  font-family: "Abril Fatface";
+  font-size: 150px;
+}
+
+.card-header {
+  font-size: 75px;
+  display: flex;
+}
+
+.card-footer {
+  font-size: 75px;
+  display: flex;
+  justify-content: flex-start;
+  transform: rotate(180deg);
+}
