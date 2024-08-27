@@ -1,37 +1,44 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
-
 body {
-  background-color: green;
+  background-color: rgb(83, 167, 55);
+}
+
+.container-fluid {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
+  width: 400px;
+  height: 600px;
+  border-radius: 20px;
   background-color: white;
-  display: block;
-  margin: auto;
-  width: 300px;
-  height: 500px;
-  margin-top: 20px;
-  border-radius: 10px;
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
-}
-
-.card-center {
-  width: 300px;
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  font-family: "Abril Fatface";
-  font-size: 150px;
+  background-color: white;
+  background-image: url("https://www.publicdomainpictures.net/pictures/380000/velka/pergament-papier-alt-vintage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .card-header {
-  font-size: 75px;
+  font-size: 120px;
   display: flex;
+  padding-left: 20px;
+}
+
+.card-center {
+  display: flex;
+  justify-content: center;
+  font-family: "Abril Fatface";
+  font-size: 250px;
+  padding-top: 20px;
 }
 
 .card-footer {
-  font-size: 75px;
   display: flex;
-  justify-content: flex-start;
   transform: rotate(180deg);
+  font-size: 120px;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
