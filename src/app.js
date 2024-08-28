@@ -11,7 +11,6 @@ window.onload = function() {
 
     const valores = [
       "A",
-      "1",
       "2",
       "3",
       "4",
@@ -38,6 +37,9 @@ window.onload = function() {
       ".card-footer"
     ).className = `card-footer ${paloRandom}`;
   }
-
   generateCardRandom();
+
+  document
+    .getElementById("generate-card-btn")
+    .addEventListener("click", generateCardRandom);
 };

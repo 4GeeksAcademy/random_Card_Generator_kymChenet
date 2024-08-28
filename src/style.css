@@ -84,3 +84,16 @@ body {
   content: "♦";
   color: red;
 }
+button {
+  background-color: #a37905ea;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: x-large;
+}
+.boton {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
