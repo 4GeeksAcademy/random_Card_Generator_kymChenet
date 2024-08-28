@@ -1,5 +1,11 @@
 body {
-  background-color: rgb(83, 167, 55);
+  background-image: url("https://static.vecteezy.com/system/resources/previews/002/127/667/large_2x/luxury-black-poker-card-symbols-background-illustration-free-vector.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
 }
 
 .container-fluid {
@@ -14,31 +20,67 @@ body {
   border-radius: 20px;
   background-color: white;
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
-  background-color: white;
   background-image: url("https://www.publicdomainpictures.net/pictures/380000/velka/pergament-papier-alt-vintage.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.card-header,
+.card-footer {
+  font-size: 150px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
 }
 
 .card-header {
-  font-size: 120px;
-  display: flex;
-  padding-left: 20px;
+  top: 20px;
+  left: 20px;
+  justify-content: flex-start;
+}
+
+.card-footer {
+  bottom: 20px;
+  right: 20px;
+  transform: rotate(180deg);
 }
 
 .card-center {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-family: "Abril Fatface";
   font-size: 250px;
   padding-top: 20px;
+  flex: 1;
 }
 
-.card-footer {
-  display: flex;
-  transform: rotate(180deg);
-  font-size: 120px;
-  padding-left: 20px;
-  padding-bottom: 20px;
+.card-spade .card-header::before,
+.card-spade .card-footer::before {
+  content: "♠";
+  color: black;
+}
+
+.card-club .card-header::before,
+.card-club .card-footer::before {
+  content: "♣";
+  color: black;
+}
+
+.card-heart .card-header::before,
+.card-heart .card-footer::before {
+  content: "♥";
+  color: red;
+}
+
+.card-diamond .card-header::before,
+.card-diamond .card-footer::before {
+  content: "♦";
+  color: red;
 }
