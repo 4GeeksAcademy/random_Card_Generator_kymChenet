@@ -42,4 +42,5 @@ window.onload = function() {
   document
     .getElementById("generate-card-btn")
     .addEventListener("click", generateCardRandom);
+  setInterval(generateCardRandom, 10000);
 };
